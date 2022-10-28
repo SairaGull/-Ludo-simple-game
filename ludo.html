@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+
+    <style>
+       
+        .container{
+            width: 100%;
+            
+        }
+        
+        .row1{
+            width: 100%;
+            height: 326px;
+            border: 2px solid white;
+        }
+        .house1{
+            width: 25%;
+            height: 322px;
+            border:2px solid black;
+            background-color: red;
+            float: left;
+            margin-left: 19%;
+        }
+        .house1-div1{
+            width: 78%;
+            height: 63%;
+            border: 5px solid white;
+            margin-top: 17%;
+            margin-left: 9%;
+            border-radius: 24px;
+
+
+        }
+        .house1-station1{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house1-station2{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+        .house1-station3{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house1-station4{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+
+
+        .center-col1{
+            width: 14%;
+            height: 322px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col1-row1{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col1-row1-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row1-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            
+        }
+        .col1-row1-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: red;
+            
+        }
+        .col1-row1-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row1-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row1-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row2{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col1-row2-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row2-div1-center{
+            height: 0px;
+            width: 0px;
+            float: left;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid blue;
+            border-bottom: 20px solid transparent;
+            margin-left: 5px;
+            margin-top: 13px;
+
+        }
+        .col1-row2-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        .col1-row2-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        .col1-row2-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        .col1-row2-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        .col1-row2-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+
+        .col1-row3{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col1-row3-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            
+        }
+        .col1-row3-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: blue;
+            
+        }
+        .col1-row3-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row3-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row3-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col1-row3-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+       .house2{
+             width: 25%;
+            height: 322px;
+            border:2px solid black;
+            background-color: blue;
+            float: left;
+            margin-left: -26px;
+       }
+       .house2-div1{
+            width: 78%;
+            height: 63%;
+            border: 5px solid white;
+            margin-top: 17%;
+            margin-left: 9%;
+            border-radius: 24px;
+
+
+        }
+        .house2-station1{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house2-station2{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+        .house2-station3{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house2-station4{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+        .row2{
+            width: 100%;
+            height: 164px;
+            /* border: 2px solid black; */
+            margin-top: 326px;
+            margin-left: -2px;
+        }
+        .center-row2{
+            width: 834px;
+            height: 162px;
+            border: 2px solid black;
+            margin-left: 253px;
+        }
+        .row2-col1{
+            width: 333px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row2-col2{
+            width: 333px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row2-col3{
+            width: 333px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row2-col1-div1{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col1-div2{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col1-div3{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col1-div4{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col1-div5{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col1-div6{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col2-div1{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            
+
+        }
+        .row-col2-div2-center{
+            height: 0px;
+            width: 0px;
+            float: left;
+            border-left: 20px solid red;
+            border-right: 20px solid transparent;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            margin-left: 15px;
+            margin-top: 3px;
+        }
+        .row2-col2-div2{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col2-div3{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col2-div4{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col2-div5{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col2-div6{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+        .row2-col3-div1{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col3-div2{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col3-div3{
+            width: 51.5px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            background-color: green;
+        }
+        .row2-col3-div4{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col3-div5{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row2-col3-div6{
+            width: 51.4px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+        }
+        .main-house{
+            width: 162px;
+            height: 160px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -165px;
+            margin-left: 590px;
+        }
+        .main-house-triangle1{
+            
+            height: 0px;
+            width: 0px;
+            float: left;
+            border-left: 87px solid red;
+            border-right: 75px solid yellow;
+            border-top: 75px solid blue;
+            border-bottom: 85px solid green;
+        }
+        .center-row3{
+            width: 331px;
+            height: 159px;
+            border: 2px solid black;
+            margin-top: -165px;
+            margin-left: 755px;
+        }
+
+        .row3-col1{
+            width: 330px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row3-col1-div1{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: -3px;
+        }
+        .row3-col1-div2{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: 53px;
+        }
+        .row3-col1-div3{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: 108px;
+        }
+        .row3-col1-div4{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: 163px;
+            background-color: blue;
+        }
+        .row3-col1-div5{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: 219px;
+        }
+        .row3-col1-div6{
+            width: 54px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin-top: -164px;
+            margin-left: 273px;
+        }
+        .row3-col2{
+            width: 330px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row3-col2-div1{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            margin-left: -3px;
+            background-color: yellow;
+            
+
+        }
+        .row3-col2-div2{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 53px;
+            margin-top: -109px;
+            background-color: yellow;
+
+        }
+        .row3-col2-div3{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 108px;
+            margin-top: -109px;
+            background-color: yellow;
+
+        }
+        .row3-col2-div4{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 163px;
+            margin-top: -109px;
+            background-color: yellow;
+
+        }
+        .row3-col2-div5{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 219px;
+            margin-top: -109px;
+            background-color: yellow;
+
+        }
+        .row3-col2-div6{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 273px;
+            margin-top: -109px;
+
+        }
+        .row3-col3{
+            width: 330px;
+            height: 50px;
+            border: 2px solid black;
+
+        }
+        .row3-col3-div1{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            margin-left: -3px;
+
+        }
+        .row3-col3-div2{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 53px;
+            margin-top: -55px;
+
+        }
+        .row3-col3-div3{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 108px;
+            margin-top: -55px;
+
+        }
+        .row3-col3-div4{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 163px;
+            margin-top: -55px;
+
+        }
+        .row3-col3-div5{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 219px;
+            margin-top: -55px;
+            background-color: yellow;
+
+        }
+        .row3-col3-div6{
+            width: 53px;
+            height: 47px;
+            border: 2px solid black;
+            float: left;
+            margin-left: 273px;
+            margin-top: -55px;
+
+        }
+        .row3{
+            width: 100%;
+            height: 326px;
+            /* border: 2px solid black; */
+        }
+        .house3{
+            width: 25%;
+            height: 322px;
+            border:2px solid black;
+            background-color: green;
+            float: left;
+            margin-left: 19%;
+        }
+        .house3-div1{
+            width: 78%;
+            height: 63%;
+            border: 5px solid white;
+            margin-top: 17%;
+            margin-left: 9%;
+            border-radius: 24px;
+
+
+        }
+        .house3-station1{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house3-station2{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+        .house3-station3{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house3-station4{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+
+
+        .center-col3{
+            width: 14%;
+            height: 322px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col3-row1{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col3-row1-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row1-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row1-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row1-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row1-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .col3-row1-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row2{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .row3-col2-div6-center{
+            width: 0px;
+            float: left;
+            border-left: 20px solid transparent;
+            border-right: 20px solid yellow;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            margin-left: -5px;
+            margin-top: 3px;
+
+
+        }
+        .col3-row2-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        
+        .col3-row2-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .col3-row2-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .col3-row2-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .col3-row2-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: green;
+        }
+        .col3-row2-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row3-div6-center{
+
+            width: 0px;
+            float: left;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid green;
+            margin-left: 2px;
+            margin-top: -4px;
+        }
+
+        .col3-row3{
+            width: 27%;
+            height: 320px;
+            border: 2px solid black;
+            float: left;
+        }
+        .col3-row3-div1{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row3-div2{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row3-div3{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            
+        }
+        .col3-row3-div4{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .col3-row3-div5{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .col3-row3-div6{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+       .house4{
+             width: 25%;
+            height: 322px;
+            border:2px solid black;
+            background-color: yellow;
+            
+            float: left;
+            margin-left: -26px;
+            
+       }
+       .house4-div1{
+            width: 78%;
+            height: 63%;
+            border: 5px solid white;
+            margin-top: 17%;
+            margin-left: 9%;
+            border-radius: 24px;
+
+
+        }
+        .house4-station1{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house4-station2{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+        .house4-station3{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: 10%;
+            margin-left: 9%;
+            border-radius: 28px;
+
+        }
+        .house4-station4{
+            width: 44px;
+            height: 46px;
+            border: 5px solid white;
+            margin-top: -56px;
+            margin-left: 65%;
+            border-radius: 28px;
+
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+       
+            <div class="house1">
+                <div class="house1-div1">
+                    <div class=" house1-station1"></div>
+                    <div class="house1-station2"></div>
+                    <div class="house1-station3"></div>
+                    <div class="house1-station4"></div>
+                </div>    
+            </div>
+            <div class="center-col1" >
+                <div class="col1-row1">
+                    <div class="col1-row1-div1"></div>
+                    <div class="col1-row1-div2"></div>
+                    <div class="col1-row1-div3"></div>
+                    <div class="col1-row1-div4"></div>
+                    <div class="col1-row1-div5"></div>
+                    <div class="col1-row1-div6"></div>
+
+                </div>
+                <div class="col1-row2">
+                    <div class="col1-row2-div1">
+                        <div class="col1-row2-div1-center"></div>
+                    </div>
+                    <div class="col1-row2-div2"> </div>
+                    <div class="col1-row2-div3"></div>
+                    <div class="col1-row2-div4"></div>
+                    <div class="col1-row2-div5"></div>
+                    <div class="col1-row2-div6"></div>
+                </div>
+                <div class="col1-row3">
+                    <div class="col1-row3-div1"></div>
+                    <div class="col1-row3-div2"></div>
+                    <div class="col1-row3-div3"></div>
+                    <div class="col1-row3-div4"></div>
+                    <div class="col1-row3-div5"></div>
+                    <div class="col1-row3-div6"></div>
+                </div>
+            </div>
+            <div class="house2">
+                <div class="house2-div1">
+                    <div class=" house2-station1"></div>
+                    <div class="house2-station2"></div>
+                    <div class="house2-station3"></div>
+                    <div class="house2-station4"></div>
+                  
+            </div>
+        </div>
+        <div class="row2">
+            <div class="center-row2">
+                <div class="row2-col1">
+                    <div class="row2-col1-div1">
+                        
+                    </div>
+                    <div class="row2-col1-div2"></div>
+                    <div class="row2-col1-div3"></div>
+                    <div class="row2-col1-div4"></div>
+                    <div class="row2-col1-div5"></div>
+                    <div class="row2-col1-div6"></div>
+                </div> 
+                <div class="row2-col2">
+                    <div class="row2-col2-div1">
+                        <div class="row-col2-div2-center"></div>
+                    </div>
+                    <div class="row2-col2-div2"></div>
+                    <div class="row2-col2-div3"></div>
+                    <div class="row2-col2-div4"></div>
+                    <div class="row2-col2-div5"></div>
+                    <div class="row2-col2-div6"></div>
+                </div>
+                <div class="row2-col3">
+                    <div class="row2-col3-div1"></div>
+                    <div class="row2-col3-div2"></div>
+                    <div class="row2-col3-div3"></div>
+                    <div class="row2-col3-div4"></div>
+                    <div class="row2-col3-div5"></div>
+                    <div class="row2-col3-div6"></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="main-house">
+                <div class="main-house-triangle1"></div>
+                <div class="main-house-triangle2"></div>
+                <div class="main-house-triangle3"></div>
+                <div class="main-house-triangle4"></div>
+            </div>
+            <div class="center-row3">
+                <div class="row3-col1">
+                    <div class="row3-col1-div1"></div>
+                    <div class="row3-col1-div2"></div>
+                    <div class="row3-col1-div3"></div>
+                    <div class="row3-col1-div4"></div>
+                    <div class="row3-col1-div5"></div>
+                    <div class="row3-col1-div6"></div>
+                </div>
+                <div class="row3-col2">
+                    <div class="row3-col2-div1">
+                       
+                    </div>
+                    <div class="row3-col2-div2"></div>
+                    <div class="row3-col2-div3"></div>
+                    <div class="row3-col2-div4"></div>
+                    <div class="row3-col2-div5"></div>
+                    <div class="row3-col2-div6">
+                        <div class="row3-col2-div6-center"></div>
+                    </div>
+
+                </div>
+                <div class="row3-col3">
+                    <div class="row3-col3-div1"></div>
+                    <div class="row3-col3-div2"></div>
+                    <div class="row3-col3-div3"></div>
+                    <div class="row3-col3-div4"></div>
+                    <div class="row3-col3-div5"></div>
+                    <div class="row3-col3-div6"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row3">
+       
+            <div class="house3">
+                <div class="house3-div1">
+                    <div class=" house3-station1"></div>
+                    <div class="house3-station2"></div>
+                    <div class="house3-station3"></div>
+                    <div class="house3-station4"></div>
+                </div>    
+            </div>
+            <div class="center-col3" >
+                <div class="col3-row1">
+                    <div class="col3-row1-div1"></div>
+                    <div class="col3-row1-div2"></div>
+                    <div class="col3-row1-div3"></div>
+                    <div class="col3-row1-div4"></div>
+                    <div class="col3-row1-div5"></div>
+                    <div class="col3-row1-div6"></div>
+
+                </div>
+                <div class="col3-row2">
+                    <div class="col3-row2-div1"></div>
+                    <div class="col3-row2-div2"></div>
+                    <div class="col3-row2-div3"></div>
+                    <div class="col3-row2-div4"></div>
+                    <div class="col3-row2-div5"></div>
+                    <div class="col3-row2-div6">
+                        <div class="col3-row3-div6-center"></div>
+                    </div>
+                </div>
+                <div class="col3-row3">
+                    <div class="col3-row3-div1"></div>
+                    <div class="col3-row3-div2"></div>
+                    <div class="col3-row3-div3"></div>
+                    <div class="col3-row3-div4"></div>
+                    <div class="col3-row3-div5"></div>
+                    <div class="col3-row3-div6"></div>
+                </div>
+            </div>
+            <div class="house4">
+                <div class="house4-div1">
+                    <div class=" house4-station1"></div>
+                    <div class="house4-station2"></div>
+                    <div class="house4-station3"></div>
+                    <div class="house4-station4"></div>
+                  
+            </div>
+        </div>
+            
+    </div>
+    
+    
+</body>
+</html>
